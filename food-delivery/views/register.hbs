@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Register an Account</h1>
+        
+        <form action="/submit" method="POST">
+            
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            
+            <fieldset>
+                <legend>Address</legend>
+                
+                <label for="street">Street</label>
+                <input type="text" id="street" name="address[street]" placeholder="Enter your street address" required>
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="address[city]" placeholder="Enter your city" required>
+
+                <label for="state">State</label>
+                <input type="text" id="state" name="address[state]" placeholder="Enter your state" required>
+
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="address[zip]" placeholder="Enter your zip code" required>
+            </fieldset>
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
